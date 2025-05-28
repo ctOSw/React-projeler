@@ -1,0 +1,137 @@
+
+:root {
+  /* Karpuz Şekeri Tema Renkleri */
+  --calculator-bg-watermelon: #D4EFDF; /* Açık Nane Yeşili */
+  --display-bg-watermelon: #FCF3CF;    /* Çok Açık Sarı */
+  --display-text-color-watermelon: #2C3E50; /* Koyu Kurşuni Mavi */
+
+  --btn-number-bg-watermelon: #FC6C85; /* Karpuz Pembesi */
+  --btn-number-text-watermelon: #FFFFFF; /* Beyaz */
+  --btn-number-hover-bg-watermelon: #FD8DA0;
+  --btn-number-active-bg-watermelon: #FB4C6A;
+
+  --btn-operator-bg-watermelon: #82E0AA; /* Parlak Yeşil */
+  --btn-operator-text-watermelon: #145A32; /* Koyu Yeşil */
+  --btn-operator-hover-bg-watermelon: #A2F0CA;
+  --btn-operator-active-bg-watermelon: #62C08A;
+
+  --btn-action-bg-watermelon: #F7DC6F; /* Parlak Sarı (Eşittir için) */
+  --btn-action-text-watermelon: #784212; /* Kahverengi */
+  --btn-action-hover-bg-watermelon: #F9E79F;
+  --btn-action-active-bg-watermelon: #F5CC4F;
+
+  --btn-clear-bg-watermelon: #F1948A; /* Açık Kırmızı (C/AC için) */
+  --btn-clear-text-watermelon: #FFFFFF; /* Beyaz */
+  --btn-clear-hover-bg-watermelon: #F5B7B1;
+  --btn-clear-active-bg-watermelon: #ED7161;
+
+  --border-color-watermelon: #F8C471; /* Altın Sarısı Kenarlık */
+}
+
+
+.calculator-app{
+ background-color: var(--calculator-bg-watermelon);   
+ padding: 1.5em;
+ width: 380px;
+ margin-top: 20px;
+ border-radius: 5px;
+}
+
+.calculator-app .display-input {
+ width: 100%;
+ background-color: var(--display-bg-watermelon);
+ color: var(--display-text-color-watermelon);
+ height: 80px;
+ text-align: right;
+ font-size: 18px;
+ border: 1px solid  var(--border-color-watermelon);
+ border-radius: 3px;
+ outline: none;
+}
+
+.calculator-app .buttons{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 10px;
+ margin-top: 20px;
+}
+
+.buttons button {
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 20px;
+ border-radius: 10px;
+ font-weight: 600;
+ font-size: 19px;
+ transition: 0.4s ease;
+ user-select: none;
+}
+
+.buttons .clear,
+.buttons .delete{
+ background-color: var(--btn-clear-bg-watermelon) ;
+ color: var(--btn-clear-text-watermelon);
+}
+
+.buttons .clear:hover,
+.buttons .delete:hover{
+ background-color: var(--btn-clear-hover-bg-watermelon);
+}
+
+.buttons .clear:active,
+.buttons .delete:active{
+ background-color: var(--btn-clear-active-bg-watermelon);
+}
+
+
+/* .buttons .delete{
+ background-color: var(--btn-clear-active-bg-watermelon) ;
+ color: var(--btn-clear-text-watermelon);
+
+} */
+
+
+
+
+
+.buttons .operator{
+ background-color: var(--btn-operator-bg-watermelon);
+ color: var(--btn-operator-text-watermelon);
+}
+
+.buttons .operator:hover{
+ background-color: var(--btn-operator-hover-bg-watermelon); 
+}
+
+.buttons .operator:active{
+ background-color: var(--btn-operator-active-bg-watermelon);
+}
+
+.buttons .number{
+ background-color: var(--btn-number-bg-watermelon);
+ color: var(--btn-number-text-watermelon);
+}
+
+
+.buttons .number:hover{
+ background-color: var(--btn-number-hover-bg-watermelon);
+}
+
+.buttons .number:active{
+ background-color: var(--btn-number-active-bg-watermelon);
+}
+
+.buttons .equals{
+ grid-column: span 4;
+ background-color: var(--btn-action-bg-watermelon);
+ color: var(--btn-action-text-watermelon);
+}
+
+.buttons .equals:hover{
+ background-color: var(--btn-action-hover-bg-watermelon);
+}
+
+.buttons .equals:active{
+ background-color: var(--btn-action-active-bg-watermelon);
+}

@@ -1,0 +1,51 @@
+:root {
+  --karpuz-acik-nane: #D4EFDF;   /* calculator-bg-watermelon */
+  --karpuz-pembe: #FC6C85;       /* btn-number-bg-watermelon */
+  --karpuz-parlak-yesil: #82E0AA;/* btn-operator-bg-watermelon */
+  --karpuz-parlak-sari: #F7DC6F; /* btn-action-bg-watermelon */
+  --karpuz-acik-sari: #FCF3CF;   /* display-bg-watermelon */
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background: linear-gradient(
+    -45deg, /* Gradyan açısı */
+    var(--karpuz-acik-nane),
+    var(--karpuz-pembe),
+    var(--karpuz-parlak-yesil),
+    var(--karpuz-parlak-sari),
+    var(--karpuz-acik-sari)
+  );
+  background-size: 400% 400%; /* Animasyon için gradyanı büyütüyoruz */
+  animation: gradientAnimation 15s ease infinite; /* Animasyon adı, süresi, zamanlama fonksiyonu ve tekrarı */
+  height: 100vh; /* Sayfanın tamamını kaplaması için */
+  margin: 0; /* Tarayıcı varsayılan boşluklarını sıfırlama */
+  font-family: sans-serif; /* Okunabilirlik için genel bir font */
+  color: #333;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
