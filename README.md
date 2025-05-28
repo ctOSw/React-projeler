@@ -1,1 +1,1 @@
-React ve Ts ile basit hesap makinesi.Klavye'den de işlem yapılabilir.
+Js ve ts ile yaptığım react projeleri.
